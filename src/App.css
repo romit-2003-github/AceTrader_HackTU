@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background-color: #4EA1EE;
+  font-family: 'Poppins';
+  color: white;
+  min-height: 100vh;
+  text-decoration: none;
+  list-style: none;
+  transition: all 1s ease;
+  overflow-x: hidden;  
+}
+
+/* Styling the Navigation Bar */
+
+.logo{
+  padding: 16px 30px;
+  font-size: 30px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 1s ease;
+
+}
+
+.navigation{
+  /* background-color: red;  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 30px;
+  transition: all 1s ease;
+}
+
+.navbar li{
+  margin: 16px 30px;
+  list-style: none;
+  font-size: 16px;
+}
+
+
+.navbar li a{
+  text-decoration: none;
+  color: white;
+  text-overflow: none;
+}
+
+.navigation .btn a{
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* Designing the Intro Page */
+
+.introduction{
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  line-height: 2rem;
+  height: 70vh;
+  margin: 120px 80px;
+  padding: 10px;
+}
+
+.introText{
+  width: 45%;
+  /* background-color: yellow; */
+  padding: 20px;
+}
+
+.introText a{
+  text-decoration: none;
+  color: white;
+}
+
+.introText p {
+  font-size: 17px;
+}
+
+.introduction img{
+  width: 40vw;
+  height: 80vh;
+  margin: -30px;
+}
+
+#para1{
+  background-color: rgb(0, 0, 0, 0.4);
+  display: inline-block;
+  margin-bottom: 35px;
+  border-radius: 10px ;
+  padding: 0.5rem 2.5rem;
+  /* border: 2px solid white; */
+}
+
+
+/* Styling the Tool Container */
+
+.toolcontainer{
+  display: flex;
+  /* background-color: green; */
+  width: 100vw;
+  justify-content: space-between;
+  height: 50vh;
+  transition: all 1s ease-in;
+}
+
+.card{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: hidden;
+  transition: all 1s ease-in;
+}
+
+.card img{
+  width: 7rem;
+  justify-content: center;
+  height: 7rem;
+  margin: 12px 0;
+}
+
+.card-body{
+  text-align: center;
+}
+
+
+/* Styling the footer */
+
+.footer{
+  display: flex;
+  width: 100vw;
+  transition: all 1s ease-in;
+}
+
+.foot1{
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  width: 25%;
+  height: auto;
+  padding: 40px;
+  transition: all 1s ease-in;
+  line-height: 20px;
+}
+
+
+.foot2_list{
+  margin: 20px 0;
+  /* background-color: darkblue; */
+}
+
+.foot2_list li{
+  list-style: none;
+  line-height: 2rem;
+  font-size: 1.1rem;
+  transition: all 1s ease-in;
+}
+
+.foot2_list li a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Styling the login page */
+
+.loginContainer{
+  /* border: 5px solid orange; */
+  display: flex;
+  transition: all 1s ease-in;
+  width: 100vw;
+}
+
+
+.loginForm{
+  /* background-color: lightcoral; */
+  width: 30vw;
+  color: black;
+  margin: 4% 20%;
+  transition: all 1s ease-in;
+  padding: 5%;
+}
+
+.loginForm .btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.login{
+  min-width: 50vw;
+  height: 100vh;
+  transition: all 1s ease-in;
+  background-color: white;
+  /* border: 3px solid red; */
+}
+
+.loginWindow{
+  background-size: 50%;
+  display: flex;
+  transition: all 1s ease-in;
+  align-items: center;
+  justify-content: center;
+    
+}
+
+.marketPhoto{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s ease-in;
+  margin: auto;
+}
+
+.loginWindow img{
+  
+  width: 90%;
+  height: 400px;
+
+}
+
+
+/* Styling the RPD Page */
+
+.CalcContainer{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  /* background-color: red; */
+
+}
+
+.rpdForm img{
+  width: 50%;
+  /* height: 20%; */
+}
+
+.CalcContainerForm{
+  /* background-color: green; */
+  width: 50vw;
+  height: 100vh;
+  /* margin: 2%; */
+}
+
+.rpdForm{
+  margin: 10%;
+}
+
+#RPDShow, #RPDperResult{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.RPDper{
+  text-align: center;
+  margin-top: 20px;
+  display: none;
+}
+
+.RPDper .btn a{
+  text-decoration: none;
+  color: white;
+}
+
+.detailWindow{
+  color: black;
+  background-color: white;
+  height: 200%;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.detailWindow img{
+  width: 100%;
+  height: 90%;
+  margin: 1% auto;
+  background-color: aqua;
+  /* display: flex; */
+  
+}
+
+label{
+  margin: 0px 10px;
+}
+
+.RpdPara{
+  padding: 0 10%;
+}
+
+#stock{
+  padding: 1% 1%;
+  margin: 2%;
+}
+
+
+/* Styling SIP Calculator */
+
+.detailsSIP{
+  display: flex;
+  flex-direction: column;
+  margin: 10% 20%;
+  color: black;
+  background-color: white;
+  border-radius: 60px;
+}
+
+.sipForm{
+  margin: 3rem 2rem;
+  padding: 2rem;
+  /* background-color: aqua; */
+}
+
+.results{
+  text-align: center;
+  margin: 10% 0;
+}
+
+.form-control{
+  border-radius:30px ;
+}
+
+/* Styling the monitoring */
+
+
+
+.tradingview-widget-container{
+  min-height: 100vh;
+}
+
+
+@media (max-width: 1023px)
+{
+  .navigation{
+    margin: 0 50px;
+    width: 40px;
+  }
+
+  .navbar li{
+    margin: 16px 20px;
+  }
+
+  .logo{
+    font-size: 25px;
+    margin: 20px;
+  }
+
+  .introText{
+    width: 70%;
+  }
+
+  .introduction{
+    width: 100vw;
+  }
+
+  .toolcontainer{
+    width: 100vw;
+  }
+  .card{
+    width: 33%;
+  }
+}
